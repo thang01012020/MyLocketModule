@@ -13,5 +13,5 @@ locket_remote = type=http-response, pattern=^https?:\/\/firebaseremoteconfig\.go
 # 2. Xóa ETag Header chống dính Cache (by HVThang)
 deleteHeader = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers), script-path=https://raw.githubusercontent.com/thang01012020/MyLocketModule/main/scripts/deleteHeader.js, timeout=60
 
-# 3. Kích hoạt Gold & Ngày 25/05/1111 (by HVThang)
+# 3. Kích hoạt Gold & Ngày 29/10/2026 (by HVThang)
 revenuecat = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[^/]+$), script-path=https://raw.githubusercontent.com/thang01012020/MyLocketModule/main/scripts/locket_sub.js, requires-body=true, max-size=-1, timeout=60
