@@ -50,16 +50,16 @@ if (ua.includes("Locket")) {
             tag: "LOCKET GOLD",
             tag_gradient: true,
             tag_style: "gold_gradient",
-            title: "KHUNG MẶC ĐỊNH,CF 45S",
+            title: "WElCOME TO LOCKET GOLD BY HVTHANG",
             feature_set: [
                 {
-                    title: "🤍🤍🤍🤍🤍🤍🤍🤍🤍🤍",
-                    body: "💛💛💛💛💛💛💛💛💛💛",
-                    imageURL: "https://i.ibb.co/xkJMqKn/photo-2026-10-16-15-31-19.png"
+                    title: "Đô nết tùy lòng hảo tâm nha hehe",
+                    body: "facebook.com/thang01012020",
+                    imageURL: "https://i.ibb.co/SD67Fp8Y/IMG-2641.jpg"
                 
                 }
             ],
-            primary_button_title: "done",
+            primary_button_title: "Ô KÊ CON DÊ",
             campaign: "locket_gold_welcome_v3",
             start_at: "2020-01-01T00:00:00",
             end_at: "2099-12-31T23:59:59",
@@ -302,7 +302,7 @@ if (ua.includes("Locket")) {
         widget_sync_token_reload_mode: "clearTokenNever",
         widget_frame_event: JSON.stringify({
             uid: "midautumn_2026",
-            url: "https://i.ibb.co/B2rVqQrt/df0f419f-49a2-4eb9-836c-9ae3fa1fef79.png",
+            url: "https://i.ibb.co/YBB4Tr2W/IMG-2645.png",
             use_local_time_zone: true,
             placement: "below",
             start_at: "2020-01-01T00:00:00",
@@ -619,8 +619,9 @@ if (ua.includes("Locket")) {
                         source: "remote",
                         caption: {
                             background: { colors: ["#B8E7FF", "#A8F5D0", "#DCCBFF"] },
+                            icon: { data: "😎", type: "emoji" },
                             max_lines: 1,
-                            text: "hvthang",
+                            text: "Locket Gold by HVThang",
                             text_color: "#183153",
                             type: "static_content"
                         }
@@ -886,7 +887,7 @@ if (ua.includes("Locket")) {
                             background: { colors: ["#1E90FF", "#00D4FF"] },
                             icon: { data: "💳", type: "emoji" },
                             max_lines: 1,
-                            text: "đọc số tài khoản",
+                            text: "Gửi ét tê ka đi",
                             text_color: "#FFFFFFE6",
                             type: "static_content"
                         }
@@ -898,7 +899,7 @@ if (ua.includes("Locket")) {
                             background: { colors: ["#B71C1C", "#FF5722"] },
                             icon: { data: "🏃", type: "emoji" },
                             max_lines: 1,
-                            text: "ai sợ thì đi về",
+                            text: "Ai sợ thì đi về",
                             text_color: "#FFFFFFE6",
                             type: "static_content"
                         }
@@ -910,7 +911,7 @@ if (ua.includes("Locket")) {
                             background: { colors: ["#D7CCC8", "#8D6E63"] },
                             icon: { data: "🧶", type: "emoji" },
                             max_lines: 1,
-                            text: "còn cái nịt",
+                            text: "Còn cái nịt",
                             text_color: "#FFFFFFE6",
                             type: "static_content"
                         }
@@ -920,9 +921,9 @@ if (ua.includes("Locket")) {
                         source: "remote",
                         caption: {
                             background: { colors: ["#9C27B0", "#E91E63"] },
-                            icon: { data: "🎤", type: "emoji" },
+                            icon: { data: "🌝", type: "emoji" },
                             max_lines: 1,
-                            text: "cảnh báo có hát",
+                            text: "Cảnh báo có hát",
                             text_color: "#FFFFFFE6",
                             type: "static_content"
                         }
@@ -1125,6 +1126,30 @@ if (ua.includes("Locket")) {
                         }
                     },
                     {
+                        overlay_id: "caption:ferrari_cu",
+                        source: "remote",
+                        caption: {
+                            background: { colors: ["#B71C1C", "#1A1A1A"] },
+                            icon: { data: "🏎️", type: "emoji" },
+                            max_lines: 1,
+                            text: "Ferrari cũ thì vẫn là Ferrari",
+                            text_color: "#FFFFFFE6",
+                            type: "static_content"
+                        }
+                    },
+                    {
+                        overlay_id: "caption:bong_hoa_chua_no",
+                        source: "remote",
+                        caption: {
+                        background: { colors: ["#6C3483", "#1B263B"] },
+                        icon: { data: "😏", type: "emoji" },
+                        max_lines: 1,
+                        text: "Đừng bao giờ khinh thường 1 bông hoa chưa nở",
+                        text_color: "#FFF8E7",
+                        type: "static_content"
+                        }
+                    },
+                    {
                         overlay_id: "caption:con_vien_la_lan",
                         source: "remote",
                         caption: {
@@ -1132,6 +1157,18 @@ if (ua.includes("Locket")) {
                             icon: { data: "🍂", type: "emoji" },
                             max_lines: 1,
                             text: "côn viên lá làn",
+                            text_color: "#FFFFFFE6",
+                            type: "static_content"
+                        }
+                    },
+                    {
+                        overlay_id: "caption:mun_han",
+                        source: "remote",
+                        caption: {
+                            background: { colors: ["#FF6F91", "#845EC2"] },
+                            icon: { data: "✨", type: "emoji" },
+                            max_lines: 1,
+                            text: "Ê thiệt nha má xài đỡ mụn hẳn",
                             text_color: "#FFFFFFE6",
                             type: "static_content"
                         }
@@ -1161,13 +1198,13 @@ if (ua.includes("Locket")) {
                         }
                     },
                     {
-                        overlay_id: "caption:co_tien_lam_phien_thien_ha",
+                        overlay_id: "caption:cho_anh_chut_thoi",
                         source: "remote",
                         caption: {
                             background: { colors: ["#0F0C29", "#302B63", "#F7971E", "#FFD200"] },
-                            icon: { data: "💰", type: "emoji" },
+                            icon: { data: "🫰", type: "emoji" },
                             max_lines: 1,
-                            text: "Có tiền làm phiền thiên hạ",
+                            text: "Chờ anh chút thôi",
                             text_color: "#FFFFFFE6",
                             type: "static_content"
                         }
@@ -1191,7 +1228,7 @@ if (ua.includes("Locket")) {
                             background: { colors: ["#FF9A9E", "#FECFEF", "#FBC2EB", "#A6C1EE"] },
                             icon: { data: "💅", type: "emoji" },
                             max_lines: 1,
-                            text: "rồi lét luôn",
+                            text: "Rồi lét luôn",
                             text_color: "#000000E6",
                             type: "static_content"
                         }
@@ -1203,7 +1240,7 @@ if (ua.includes("Locket")) {
                             background: { colors: ["#FF6EC7", "#7873F5", "#4ADEDE", "#FFE66D"] },
                             icon: { data: "🌈", type: "emoji" },
                             max_lines: 1,
-                            text: "rồi gay luôn",
+                            text: "Rồi gay luôn",
                             text_color: "#FFFFFFE6",
                             type: "static_content"
                         }
@@ -1275,7 +1312,7 @@ if (ua.includes("Locket")) {
                             background: { colors: ["#1F1C2C", "#928DAB", "#C9D6FF"] },
                             icon: { data: "😳", type: "emoji" },
                             max_lines: 1,
-                            text: "vl m ơi?",
+                            text: "Vl m ơi?",
                             text_color: "#FFFFFFE6",
                             type: "static_content"
                         }
@@ -1305,14 +1342,14 @@ if (ua.includes("Locket")) {
                         }
                     },
                     {
-                        overlay_id: "caption:overthinking_vai_chuong",
+                        overlay_id: "caption:am_long",
                         source: "remote",
                         caption: {
-                            background: { colors: ["#2C3E50", "#4CA1AF"] },
-                            icon: { data: "🤯", type: "emoji" },
+                            background: { colors: ["#D97706", "#7C2D12"] },
+                            icon: { data: "🥰", type: "emoji" },
                             max_lines: 1,
-                            text: "Overthinking vai chưởng",
-                            text_color: "#FFFFFFE6",
+                            text: "[Ấm lòng][Ấm lòng]",
+                            text_color: "#FFF8E7",
                             type: "static_content"
                         }
                     },
@@ -1321,7 +1358,7 @@ if (ua.includes("Locket")) {
                         source: "remote",
                         caption: {
                             background: { colors: ["#870000", "#190A05"] },
-                            icon: { data: "🙄", type: "emoji" },
+                            icon: { data: "😏", type: "emoji" },
                             max_lines: 1,
                             text: "Chan bố mày đi",
                             text_color: "#FFFFFF",
@@ -1335,7 +1372,7 @@ if (ua.includes("Locket")) {
                             background: { colors: ["#11998E", "#38EF7D"] },
                             icon: { data: "🥬", type: "emoji" },
                             max_lines: 1,
-                            text: "oách xà lách",
+                            text: "Oách xà lách",
                             text_color: "#FFFFFF",
                             type: "static_content"
                         }
