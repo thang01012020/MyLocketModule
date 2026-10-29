@@ -50,10 +50,10 @@ if (ua.includes("Locket")) {
             tag: "LOCKET GOLD",
             tag_gradient: true,
             tag_style: "gold_gradient",
-            title: "WElCOME TO LOCKET GOLD BY HVTHANG",
+            title: "LOCKETGOLD BY HVTHANG",
             feature_set: [
                 {
-                    title: "Đô nết tùy lòng hảo tâm nha hehe",
+                    title: "Tùy lòng hảo tâm nha",
                     body: "facebook.com/thang01012020",
                     imageURL: "https://i.ibb.co/SD67Fp8Y/IMG-2641.jpg"
                 
