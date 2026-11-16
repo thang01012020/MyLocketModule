@@ -731,6 +731,30 @@ if (obj && typeof obj === "object") {
                         }
                     },
                     {
+                        overlay_id: "caption:hvthang2",
+                        source: "remote",
+                        caption: {
+                            background: { colors: ["#F8BBD0", "#E91E63"] },
+                            icon: { data: "🪷", type: "emoji" },
+                            max_lines: 1,
+                            text: "Cố Đô Huệ",
+                            text_color: "#183153",
+                            type: "static_content"
+                        }
+                    },
+                    {
+                        overlay_id: "caption:hvthang3",
+                        source: "remote",
+                        caption: {
+                            background: { colors: ["#2E7D32", "#1B5E20"] },
+                            icon: { data: "🐐", type: "emoji" },
+                            max_lines: 1,
+                            text: "Tết Đinh Mùi 2027",
+                            text_color: "#FFFFFF",
+                            type: "static_content"
+                        }
+                    },
+                    {
                         overlay_id: "caption:chan_bo_may_di",
                         source: "remote",
                         caption: {
@@ -806,18 +830,7 @@ if (obj && typeof obj === "object") {
                             type: "static_content"
                         }
                     },
-                    {
-                        overlay_id: "caption:luc_nao_co_tien_thi_moi_di_a",
-                        source: "remote",
-                        caption: {
-                            background: { colors: ["#0F2027", "#203A43", "#2C5364"] },
-                            icon: { data: "💸", type: "emoji" },
-                            max_lines: 1,
-                            text: "Lúc nào có tiền thì mới đi á",
-                            text_color: "#FFFFFFE6",
-                            type: "static_content"
-                        }
-                    },
+                    
                     {
                         overlay_id: "caption:doc_so_tai_khoan",
                         source: "remote",
@@ -1378,18 +1391,7 @@ if (obj && typeof obj === "object") {
                             type: "static_content"
                         }
                     },
-                    {
-                        overlay_id: "caption:tuyet_doi_dien_anh",
-                        source: "remote",
-                        caption: {
-                            background: { colors: ["#455A64", "#263238"] },
-                            icon: { data: "📷", type: "emoji" },
-                            max_lines: 1,
-                            text: "Tuyệt đối điện ảnh",
-                            text_color: "#FFFFFFE6",
-                            type: "static_content"
-                        }
-                    },
+                    
                     {
                         overlay_id: "caption:ua_alo",
                         source: "remote",
@@ -1713,23 +1715,12 @@ if (obj && typeof obj === "object") {
                             background: { colors: ["#F2994A", "#F2C94C"] },
                             icon: { data: "🛶", type: "emoji" },
                             max_lines: 1,
-                            text: "Cần Thơ gạo trắng",
+                            text: "Cần Thơ ther mộng",
                             text_color: "#5C3500E6",
                             type: "static_content"
                         }
                     },
-                    {
-                        overlay_id: "caption:ha_long_ky_quan",
-                        source: "remote",
-                        caption: {
-                            background: { colors: ["#2980B9", "#6DD5FA"] },
-                            icon: { data: "⛰️", type: "emoji" },
-                            max_lines: 1,
-                            text: "Hạ Long kỳ quan",
-                            text_color: "#FFFFFFE6",
-                            type: "static_content"
-                        }
-                    },
+                    
                     {
                         overlay_id: "caption:phu_quoc_nang_vang",
                         source: "remote",
