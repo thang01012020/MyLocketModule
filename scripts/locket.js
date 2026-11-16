@@ -726,7 +726,7 @@ if (obj && typeof obj === "object") {
                             icon: { data: "🥰", type: "emoji" },
                             max_lines: 1,
                             text: "Huế Mộng Mer",
-                            text_color: "#183153",
+                            text_color: "#FFFFFF",
                             type: "static_content"
                         }
                     },
@@ -734,11 +734,11 @@ if (obj && typeof obj === "object") {
                         overlay_id: "caption:hvthang2",
                         source: "remote",
                         caption: {
-                            background: { colors: ["#F8BBD0", "#E91E63"] },
+                            background: { colors: ["#D8B4E2", "#F8BBD0"] },
                             icon: { data: "🪷", type: "emoji" },
                             max_lines: 1,
                             text: "Cố Đô Huệ",
-                            text_color: "#183153",
+                            text_color: "#FFFFFF",
                             type: "static_content"
                         }
                     },
@@ -767,13 +767,50 @@ if (obj && typeof obj === "object") {
                         }
                     },
                     {
-                        overlay_id: "caption:cu",
+                        overlay_id: "caption:alone",
                         source: "remote",
                         caption: {
                             background: { colors: ["#FFD6A5", "#FFF1A8", "#FFC4D6"] },
+                            icon: { data: "👤", type: "emoji" },
                             max_lines: 1,
-                            text: "Cu 🐎",
-                            text_color: "#633B24",
+                            text: "Alone",
+                            text_color: "#FFFFFFE6",
+                            type: "static_content"
+                        }
+                    },
+                    {
+                        overlay_id: "caption:nhau_khong",
+                        source: "remote",
+                        caption: {
+                            background: { colors: ["#12C2E9", "#F64F59"] },
+                            icon: { data: "🍻", type: "emoji" },
+                            max_lines: 1,
+                            text: "Nhậu không!",
+                            text_color: "#FFFFFFE6",
+                            type: "static_content"
+                        }
+                    },
+                    {
+                        overlay_id: "caption:ae_san_san",
+                        source: "remote",
+                        caption: {
+                            background: { colors: ["#7F7FD5", "#86A8E7", "#91EAE4"] },
+                            icon: { data: "🫂", type: "emoji" },
+                            max_lines: 1,
+                            text: "Ae sán sàn",
+                            text_color: "#FFFFFFE6",
+                            type: "static_content"
+                        }
+                    },
+                    {
+                        overlay_id: "caption:com_nuoc",
+                        source: "remote",
+                        caption: {
+                            background: { colors: ["#FF512F", "#F09819", "#FFD200"] },
+                            icon: { data: "🫵", type: "emoji" },
+                            max_lines: 1,
+                            text: "Cơm nước j chưa ngừi đẹp",
+                            text_color: "#FFFFFFE6",
                             type: "static_content"
                         }
                     },
@@ -794,9 +831,9 @@ if (obj && typeof obj === "object") {
                         source: "remote",
                         caption: {
                             background: { colors: ["#1A237E", "#455A64"] },
-                            icon: { data: "🎬", type: "emoji" },
+                            icon: { data: "🎓", type: "emoji" },
                             max_lines: 1,
-                            text: "Cinema Time!",
+                            text: "Happy Graduation Day!",
                             text_color: "#FFFFFFE6",
                             type: "static_content"
                         }
@@ -1619,7 +1656,7 @@ if (obj && typeof obj === "object") {
                             background: { colors: ["#7F7FD5", "#86A8E7", "#91EAE4"] },
                             icon: { data: "🌸", type: "emoji" },
                             max_lines: 1,
-                            text: "Thành phố Huế xinh iu",
+                            text: "Thành Phố Huế xinh iu",
                             text_color: "#FFFFFFE6",
                             type: "static_content"
                         }
