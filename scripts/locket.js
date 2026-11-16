@@ -394,7 +394,7 @@ if (obj && typeof obj === "object") {
         widget_sync_token_reload_mode: "clearTokenNever",
         widget_frame_event: JSON.stringify({
             uid: "midautumn_2026",
-            url: "https://i.ibb.co/cShWXgPL/frame-ba-khi.png",
+            url: "https://i.ibb.co/XZyVTdbt/khung-nh-shin-chan-vi-n-m-nh-3x.png",
             use_local_time_zone: true,
             placement: "below",
             start_at: "2020-01-01T00:00:00",
