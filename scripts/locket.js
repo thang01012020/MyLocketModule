@@ -138,6 +138,40 @@ if (ua.includes("Locket")) {
     obj.entries.camera_roll = JSON.stringify(cameraRollConfig);
 
     var durationStr = MY_VIDEO_DURATION.toString();
+
+    // Filter gốc của Locket. App hiện dùng cả tên khóa snake_case lẫn
+    // camelCase tùy phiên bản, nên luôn gửi cả hai định dạng.
+    var builtInSheetFilters = [
+        { title: { en: "Goofy", vi: "Hài hước" }, filter_ids: ["okay_wig", "influencer", "looks_maxxing", "toothless", "bye_brows"] },
+        { title: { en: "Looks", vi: "Ngoại hình" }, filter_ids: ["bowling_ball", "blonde_bleached", "beard", "bob_cut", "buns", "tatted", "mohawk", "braces", "bye_brows"] },
+        { title: { en: "Celebrate", vi: "Tiệc tùng" }, filter_ids: ["slimed", "princess", "disco_lights", "cash_money", "happy_birthday"] },
+        { title: { en: "Cute", vi: "Đáng yêu" }, filter_ids: ["cutesy", "sticker_face", "flower_crown", "love_bug"] },
+        { title: { en: "Costumes", vi: "Trang phục" }, filter_ids: ["wedding", "cowboy_cowgirl", "giraffe", "clown"] },
+        { title: { en: "Holidays", vi: "Lễ hội" }, filter_ids: ["easter_bunney_cutout", "easter_chick_cutout", "bearded", "leprechaun", "lucky_face", "sweet_hearts", "elf_cutout", "santa_cutout", "frosty"] }
+    ];
+    var builtInPickerFilters = [
+        "okay_wig", "influencer", "looks_maxxing", "toothless", "bye_brows",
+        "bowling_ball", "blonde_bleached", "beard", "bob_cut", "buns", "tatted", "mohawk", "braces",
+        "slimed", "princess", "disco_lights", "cash_money", "happy_birthday",
+        "cutesy", "sticker_face", "flower_crown", "love_bug",
+        "wedding", "cowboy_cowgirl", "giraffe", "clown",
+        "easter_bunney_cutout", "easter_chick_cutout", "bearded", "leprechaun", "lucky_face", "sweet_hearts", "elf_cutout", "santa_cutout", "frosty"
+    ];
+    var cameraFilterConfig = {
+        allows_custom_filters: true,
+        allowsCustomFilters: true,
+        show_filter_button: true,
+        showFilterButton: true,
+        sheet_enabled: true,
+        sheetEnabled: true,
+        open_sheet_immediately: true,
+        openSheetImmediately: true,
+        sheet_filters: builtInSheetFilters,
+        sheetFilters: builtInSheetFilters,
+        picker_filters: builtInPickerFilters,
+        pickerFilters: builtInPickerFilters
+    };
+
     Object.assign(obj.entries, {
         live_photos: JSON.stringify({
             capture: true,
@@ -145,29 +179,7 @@ if (ua.includes("Locket")) {
             catch_up: true,
             widget_looping_mode: "never"
         }),
-        camera_filter_config: JSON.stringify({
-            allows_custom_filters: true,
-            show_filter_button: true,
-            sheet_enabled: true,
-            open_sheet_immediately: true,
-            sheet_filters: [
-                { title: { en: "Goofy" }, filter_ids: ["okay_wig", "influencer", "looks_maxxing", "toothless", "bye_brows"] },
-                { title: { en: "Looks" }, filter_ids: ["bowling_ball", "blonde_bleached", "beard", "bob_cut", "buns", "tatted", "mohawk", "braces", "bye_brows"] },
-                { title: { en: "Celebrate" }, filter_ids: ["slimed", "princess", "disco_lights", "cash_money", "happy_birthday"] },
-                { title: { en: "Cute" }, filter_ids: ["cutesy", "sticker_face", "flower_crown", "love_bug"] },
-                { title: { en: "Costumes" }, filter_ids: ["wedding", "cowboy_cowgirl", "giraffe", "clown"] },
-                { title: { en: "Holidays" }, filter_ids: ["easter_bunney_cutout", "easter_chick_cutout", "bearded", "leprechaun", "lucky_face", "sweet_hearts", "elf_cutout", "santa_cutout", "frosty"] }
-            ],
-            picker_filters: [
-                "okay_wig", "influencer", "looks_maxxing", "toothless", "bye_brows",
-                "bowling_ball", "blonde_bleached", "beard", "bob_cut", "buns",
-                "tatted", "mohawk", "braces", "slimed", "princess",
-                "disco_lights", "cash_money", "happy_birthday", "cutesy", "sticker_face",
-                "flower_crown", "love_bug", "wedding", "cowboy_cowgirl", "giraffe",
-                "clown", "easter_bunney_cutout", "easter_chick_cutout", "bearded", "leprechaun",
-                "lucky_face", "sweet_hearts", "elf_cutout", "santa_cutout", "frosty"
-            ]
-        }),
+        camera_filter_config: JSON.stringify(cameraFilterConfig),
         camera_roll_preview_enabled: "true",
         camera_roll_video_enabled: "true",
         camera_roll_video_upload_enabled: "true",
