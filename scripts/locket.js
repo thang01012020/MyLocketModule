@@ -4,10 +4,45 @@
 // Caption: HVThang
 // ============================================================
 
-var ua = $request.headers["User-Agent"] || $request.headers["user-agent"] || "";
+var request = typeof $request !== "undefined" && $request ? $request : {};
+var ua = (request.headers && (request.headers["User-Agent"] || request.headers["user-agent"])) || "";
+var hasResponse = typeof $response !== "undefined" && $response && typeof $response.body === "string";
+
+// Request mode: Cloud Functions must also return the IDs that appear in the
+// camera filter sheet. This is the same mechanism used by modulelocket-main.
+if (!hasResponse) {
+    var filterRequestUrl = request.url || "";
+    var builtInFilterIds = [
+        "okay_wig", "influencer", "looks_maxxing", "toothless", "bye_brows",
+        "bowling_ball", "blonde_bleached", "beard", "bob_cut", "buns", "tatted", "mohawk", "braces",
+        "slimed", "princess", "disco_lights", "cash_money", "happy_birthday",
+        "cutesy", "sticker_face", "flower_crown", "love_bug",
+        "wedding", "cowboy_cowgirl", "giraffe", "clown",
+        "easter_bunney_cutout", "easter_chick_cutout", "bearded", "leprechaun", "lucky_face", "sweet_hearts", "elf_cutout", "santa_cutout", "frosty"
+    ];
+
+    if (filterRequestUrl.includes("getFilters") || filterRequestUrl.includes("get_filters")) {
+        $done({
+            response: {
+                status: 200,
+                headers: {
+                    "Content-Type": "application/json; charset=utf-8",
+                    "Access-Control-Allow-Origin": "*"
+                },
+                body: JSON.stringify({
+                    result: { data: { filters: builtInFilterIds }, status: 200 },
+                    data: { filters: builtInFilterIds },
+                    status: 200
+                })
+            }
+        });
+    } else {
+        $done({});
+    }
+} else {
 var obj = JSON.parse($response.body);
 
-if (ua.includes("Locket")) {
+if (obj && typeof obj === "object") {
     obj.Attention = "Chúc mừng bạn! Vui lòng không bán hoặc chia sẻ cho người khác!";
     obj.entries = obj.entries || {};
 
@@ -180,6 +215,33 @@ if (ua.includes("Locket")) {
             widget_looping_mode: "never"
         }),
         camera_filter_config: JSON.stringify(cameraFilterConfig),
+        all_filters_free: "true",
+        free_filters_enabled: "true",
+        can_use_filters: "true",
+        can_apply_filters: "true",
+        camera_filter_unlocked: "true",
+        camera_filters_unlocked: "true",
+        camera_filters_enabled: "true",
+        camera_filter_enabled: "true",
+        custom_filters_enabled: "true",
+        camera_filter_sheet_enabled: "true",
+        camera_filter_sheet_selection_enabled: "true",
+        filter_selection_enabled: "true",
+        sheet_filters_selectable: "true",
+        camera_filter_button_enabled: "true",
+        camera_filter_v2_enabled: "true",
+        ai_filters_enabled: "true",
+        holiday_filters_enabled: "true",
+        unlocked_filters: "true",
+        show_filter_button: "true",
+        showFilterButton: "true",
+        allows_custom_filters: "true",
+        allowsCustomFilters: "true",
+        camera_filter_requires_gold: "false",
+        camera_filters_requires_gold: "false",
+        filter_requires_gold: "false",
+        filters_require_gold: "false",
+        filtered_image_requires_gold: "false",
         camera_roll_preview_enabled: "true",
         camera_roll_video_enabled: "true",
         camera_roll_video_upload_enabled: "true",
@@ -2043,3 +2105,4 @@ if (ua.includes("Locket")) {
 }
 
 $done({ body: JSON.stringify(obj) });
+}
