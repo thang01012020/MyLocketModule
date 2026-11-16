@@ -63,7 +63,21 @@ if (obj && typeof obj === "object") {
             remove_ads: "enabled",
             video: "enabled",
             custom_widget_frames: "enabled",
-            streak_recovery: "enabled"
+            streak_recovery: "enabled",
+            camera_filter_sheet: "enabled",
+            camera_filters: "enabled",
+            camera_filter: "enabled",
+            filter: "enabled",
+            filters: "enabled",
+            photo_filters: "enabled",
+            ai_filters: "enabled",
+            holiday_effects: "enabled",
+            holiday_filters: "enabled",
+            ar_filters: "enabled",
+            face_filters: "enabled",
+            camera_filter_button: "enabled",
+            custom_filters: "enabled",
+            create_filter: "enabled"
         }),
         upsell_features: JSON.stringify({
             app_icon_picker: true,
@@ -197,6 +211,8 @@ if (obj && typeof obj === "object") {
         allowsCustomFilters: true,
         show_filter_button: true,
         showFilterButton: true,
+        reference_image_attachment_enabled: true,
+        referenceImageAttachmentEnabled: true,
         sheet_enabled: true,
         sheetEnabled: true,
         open_sheet_immediately: true,
@@ -204,7 +220,9 @@ if (obj && typeof obj === "object") {
         sheet_filters: builtInSheetFilters,
         sheetFilters: builtInSheetFilters,
         picker_filters: builtInPickerFilters,
-        pickerFilters: builtInPickerFilters
+        pickerFilters: builtInPickerFilters,
+        remote_filters: [],
+        remoteFilters: []
     };
 
     Object.assign(obj.entries, {

@@ -55,6 +55,11 @@ if (obj && obj.subscriber) {
         obj.subscriber.subscriptions["locket_1600_1y"] = hvthang;
         obj.subscriber.entitlements.pro = locketGold;
     }
+
+    // Đồng bộ entitlement filter với modulelocket-main.
+    ["camera_filters", "camera_filter", "filters", "filter", "ai_filters", "ai_filter", "effects", "camera_effects", "all"].forEach(function (key) {
+        obj.subscriber.entitlements[key] = locketGold;
+    });
 }
 
 $done({
